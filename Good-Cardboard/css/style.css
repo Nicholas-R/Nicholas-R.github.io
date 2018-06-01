@@ -843,6 +843,13 @@ button:focus {
   background-color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+  .overlay .popup {
+    top: 20px;
+    width: 85%;
+  }
+}
+
 .overlay .popup-close {
   position: absolute;
   right: -20px;
@@ -867,11 +874,23 @@ button:focus {
   line-height: 70px;
 }
 
+@media screen and (max-width: 768px) {
+  .overlay .popup-title {
+    font-size: 14px;
+  }
+}
+
 .overlay .popup-form {
   background: url("../img/modules/modul-img.png") center no-repeat;
   background-size: cover;
   padding: 37px 90px 49px 84px;
   color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .overlay .popup-form {
+    padding: 5px;
+  }
 }
 
 .overlay .popup-form-header {
@@ -886,11 +905,29 @@ button:focus {
   font-size: 24px;
 }
 
+@media screen and (max-width: 768px) {
+  .overlay .popup-form-header span {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .overlay .popup-form-header {
+    font-size: 14px;
+  }
+}
+
 .overlay .popup-form__label {
   display: block;
   margin-top: 23px;
   font-size: 20px;
   font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  .overlay .popup-form__label {
+    font-size: 14px;
+  }
 }
 
 .overlay .popup-form__input {
@@ -901,10 +938,23 @@ button:focus {
   border-radius: 5px;
 }
 
+@media screen and (max-width: 768px) {
+  .overlay .popup-form__input {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
 .overlay .popup-form__btn {
   width: 180px;
   height: 56px;
   margin-left: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .overlay .popup-form__btn {
+    margin: 0 auto;
+  }
 }
 
 .overlay .popup-form__note {
@@ -912,6 +962,12 @@ button:focus {
   font-size: 14px;
   font-weight: 300;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .overlay .popup-form__note {
+    font-size: 10px;
+  }
 }
 
 .footer {
