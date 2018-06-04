@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<link rel="icon" href="">	
+	<meta name="author" content="Rezvin Mykola">
+	<link rel="icon" href="img/nav/Logo-icon-mini.png">	
 
 	<title>WebAgency</title>
 	<!-- Подключаем сетку Bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 	<!-- Подключаем шрифты-->
-	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,700|PT+Sans+Caption|Roboto:300&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<!-- Подключаем стили CSS -->
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Подключаем иконочный шрифт Font Awesome -->
@@ -285,7 +284,7 @@
 							</h3>
 							<!-- /.development-block__title -->
 							<div class="wrap wrap-development">
-								<button class="button button-blue development-button">от 15000 руб</button>
+								<div class="button button-blue development-button">от 15000 руб</div>
 							<i class="fa fa-arrow-right fa-3x"></i>
 							</div>
 						</div>
@@ -301,9 +300,9 @@
 							</h3>
 							<!-- /.development-block__title -->
 							<div class="wrap wrap-development">
-								<button class="button button-orange development-button">
+								<div class="button button-orange development-button">
 									от 10000 руб
-								</button>
+								</div>
 								<i class="fa fa-arrow-right fa-3x"></i>
 							</div>
 						</div>
@@ -320,7 +319,7 @@
 							</h3>
 							<!-- /.development-block__title -->
 							<div class="wrap wrap-development">
-								<button class="button button-green development-button">от 20000 руб</button>
+								<div class="button button-green development-button">от 20000 руб</div>
 								<i class="fa fa-arrow-right fa-3x"></i>
 							</div>
 						</div>
@@ -395,11 +394,11 @@
 			</div>
 			<!-- /.projects-blocks -->
 		<div class="projects-footer">
-		 <button class="button projects-footer__button">
+		 <div href="#" class="button projects-footer__button">
 		 	<a href="#" class="prodjects-button__link">
 		 		ЕЩЕ БОЛЬШЕ
 		 	</a>
-		 </button>
+		 </div>
 		</div>
 		<!-- /.prodjects-button -->
 	</section>
@@ -534,9 +533,9 @@
 			<div class="row">
 				<div class="col-12 col-md-7">
 					<div class="care-text">
-						<div class="care-text__title">
+						<h3 class="care-text__title">
 							ЗАБОТА О КАЖДОМ
-						</div>
+						</h3>
 						<!-- /.care-text__title -->
 						<div class="care-text__descr">
 							Рожденный в нашей студии проект обречен
@@ -570,9 +569,9 @@
 			<div class="row align-items-center">
 				<div class="col-12 col-md-5">
 					<div class="feedback-text">
-						<div class="feedback-text__title">
+						<h3 class="feedback-text__title">
 							СВЯЖИТЕСЬ С НАМИ
-						</div>
+						</h3>
 						<!-- /.feedback-text__title -->
 						<p class="feedback-text__descr">
 							Готовы начать работу? Отправьте
@@ -628,7 +627,7 @@
 	<!-- /.footer -->
 <!-- Подключение jquery -->
 <script src="js/jquery-2.2.4.min.js"></script>
-<script type="text/javascript">
+<script>
 	$(document).ready(function(){
 		var touch = $('#touch-menu');
 		var menu = $('.nav-link');
