@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Denteez</title>
+	<!-- Подключение шрифтов -->
+	<link rel="stylesheet" href="css/fonts-proxima-nova.css">
+	<!-- Подключение таблици стилей -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header-block">
+				<div class="header-block__wrap">
+					<div class="header-block__img"><img src="img/header/header-logo-home.png" alt="logo"></div>
+					<!-- /.header-block__img -->
+					<button class="header-block__button">Log In Now</button>
+				</div>
+				<!-- /.header-block__wrap -->
+				<div class="header-block__wrap">
+					<div class="header-block__text">
+						<h1>Home of Dentistry</h1>
+						<p>Denteez was created by dentists for dentistry in order to<br>
+						make the life of everyone involved in dentistry easier.</p>
+					</div>
+					<!-- /.header-block__text -->
+				</div>
+				<!-- /.header-block__wrap -->
+			</div>
+			<!-- /.header-block -->
+		</div>
+		<!-- /.container -->
+	</header>
+	<!-- /.header -->
+	<section class="main">
+		<div class="container">
+			<div class="main-block">
+				<h4 class="main-comment">Fields marked “*” are required</h4>
+				<!-- /.main-comment -->
+				<form action="" class="main-form">
+					<h4 class="main-comment_black">
+						Enquiry Type *
+					</h4>
+					<!-- /.main-comment_black -->
+					<input type="text" value="Other" class="main-input">
+					<input type="text" value="Other" class="main-input">
+					<div class="main-input__wrap">
+						<div class="main-input__comm">
+							<h4 class="main-comment_black">
+								Name *
+							</h4>
+							<!-- /.main-comment_black -->
+							<input type="text" value="Dentist" class="main-input main-input_small">
+						</div>
+						<!-- /.main-input__comm -->
+						<div class="main-input__comm">
+							<h4 class="main-comment_black">
+								Email *
+							</h4>
+							<!-- /.main-comment_black -->
+							<input type="text" value="rachelm@gmail.com" class="main-input main-input_small">
+						</div>
+						<!-- /.main-input__comm -->
+					</div>
+					<!-- /.main-input__wrap -->
+					<h4 class="main-comment_black">
+						Subject *
+					</h4>
+					<!-- /.main-comment_black -->
+					<input type="text" class="main-input">
+					<div class="main-block__text">
+						<h4 class="main-comment_black">
+							Description *
+						</h4>
+						<!-- /.main-comment_black -->
+						<p>(0/1000)</p>
+					</div>
+					<!-- /.main-block__text -->
+					<textarea type="text" rows="9" class="main-input main-input__textarea"></textarea>
+					<div class="main-input main-input__photo" id="drop-area">
+						<label class="button" for="fileElem"><h5>Add photo</h5> </label>
+						<p>Minimum size of <br>
+							300x300 jpeg ipg <br>
+						png 5 MB</p>
+						<input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+					</div>
+					<input type="submit" value="Submit" class="main-button">
+				</form>
+				<!-- /.main-form -->
+			</div>
+			<!-- /.main-block -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.main -->
+	<section class="about">
+		<div class="container">
+			<div class="about-block">
+				<h3 class="about-block__title">About Denteez</h3>
+				<!-- /.about-title -->
+				<div class="about-block__descr">
+					<p>Why is it always so difficult to find what you are looking for in dentistry? Whether it is the latest advancement in technology or techniques or simply a review or understanding of the vast amount of products? Perhaps finding someone to just fix your broken equipment or simply hiring new staff or looking for that new job?</p>
+				</div>
+				<!-- /.about-block__text -->
+				<div class="about-block__descr about-block__descr_right">
+					<p>Our mission is to give every dental professional the possibility to discuss and share all aspects of their profession, their practice and their business. We aim to make the world of dentistry easy and accessible, so every dental professional can find what they are looking for quickly and easily all in one place.
+					</p>
+				</div>
+				<!-- /.about-block__text -->
+			</div>
+			<!-- /.about-block -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.about -->
+
+
+	<script src="js/main.js"></script>
+
+</body>
+</html>
