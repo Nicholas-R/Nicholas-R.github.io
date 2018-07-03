@@ -1,6 +1,6 @@
 (function loadServices() {
   var xhr = new XMLHttpRequest();
-  xhr.open('GET', '../services.json', true);
+  xhr.open('GET', 'services.json', true);
   xhr.send();
   xhr.onreadystatechange = function() {
     if (xhr.readyState != 4) return;
