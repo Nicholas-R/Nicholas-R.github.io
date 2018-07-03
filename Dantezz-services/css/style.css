@@ -29,6 +29,12 @@ input {
   margin-right: 219px;
 }
 
+@media screen and (max-width: 970px) {
+  .container {
+    margin: 0 auto;
+  }
+}
+
 .header {
   background: #87b448;
   height: 68px;
@@ -135,6 +141,12 @@ input {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 970px) {
+  .content-colomn {
+    margin: 0 auto;
+  }
 }
 
 .content-colomn__left {
@@ -595,6 +607,11 @@ input {
   width: 140px;
   height: 140px;
   border: 1px solid #e0e2e6;
+}
+
+.service-block__img img {
+  height: 120px;
+  width: 120px;
 }
 
 .service-block__descr {

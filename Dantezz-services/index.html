@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<title>Denteez</title>
 	<!-- Подключение шрифтов -->
-	<link rel="stylesheet" href="css/fonts-proxima-nova.css">
+	<link rel="stylesheet" href="css/fonts-proxima-nova.min.css">
 	<!-- Подключение таблици стилей -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
 	<header class="header">
@@ -136,270 +136,140 @@
 						<div class="service-header">
 							<h2 class="service-header__title">Service Directory</h2>
 							<!-- /.service-title -->
-							<button class="service-header__button">Add New Service</button>
+							<button class="service-header__button" onclick="showServices(services)">Add New Service</button>
 							<!-- /.service-button -->
 						</div>
 						<!-- /.service-header -->
-						<div class="service-block">
-							<a href="#" class="service-block__link">
-								<span class="service-block__img">
-									<img src="img/service/service-1.png" alt="1">
-								</span>
-								<span class="service-block__descr">Accountancy</span>
-							</a>
-							<a href="#" class="service-block__link">
-								<span class="service-block__img">
-									<img src="img/service/service-2.png" alt="2">
-								</span>
-								<span class="service-block__descr">Associations</span>
-							</a>
-							<a href="#" class="service-block__link">
-								<span class="service-block__img">
-									<img src="img/service/service-3.png" alt="3">
-								</span>
-								<span class="service-block__descr">Buy/Sell Dental <br>Practice</span>
-							</a>
-							<a href="#" class="service-block__link">
-								<span class="service-block__img">
-									<img src="img/service/service-4.png" alt="4">
-								</span>
-								<span class="service-block__descr">Clinical Waste <br>Collection</span>
-							</a>
-							<a href="#" class="service-block__link"><span class="service-block__img">
-								<img src="img/service/service-5.png" alt="5">
-							</span>
-							<span class="service-block__descr">Computer Service</span>
-						</a>
-						<a href="#" class="service-block__link">
-							<span class="service-block__img"><img src="img/service/service-6.png" alt="6">
-							</span>
-							<span class="service-block__descr">CPR/Basic Life <br>Support Training</span>
-						</a>
-						<div class="service-block__wrap">
-							<a href="#" class="service-block__link">
-								<span class="service-block__img"><img src="img/service/service-7.png" alt="7">
-								</span>
-								<span class="service-block__descr">Dental Recruitment</span>
-							</a>
-							<a href="#" class="service-block__link">
-								<span class="service-block__img">
-									<img src="img/service/service-8.png" alt="8">
-								</span>
-								<span class="service-block__descr">Dental Software</span>
-							</a>
-							<a href="#" class="service-block__link">
-								<span class="service-block__img">
-									<img src="img/service/service-9.png" alt="9">
-								</span>
-								<span class="service-block__descr">Electrical Safety <br>And Testing</span>
-							</a>
-							<a href="#" class="service-block__link">
-								<span class="service-block__img">
-									<img src="img/service/service-10.png" alt="10">
-								</span>
-								<span class="service-block__descr">Marketing</span>
-							</a>
-							<a href="#" class="service-block__link">
-								<span class="service-block__img">
-									<img src="img/service/service-11.png" alt="11">
-								</span>
-								<span class="service-block__descr">
-								Others</span>
-							</a>
-							<a href="#" class="service-block__link">
-								<span class="service-block__img">
-									<img src="img/service/service-12.png" alt="12">
-								</span>
-								<span class="service-block__descr">Repairs</span>
-							</a>
-							<a href="#" class="service-block__link">
-								<span class="service-block__img">
-									<img src="img/service/service-13.png" alt="">
-								</span>
-								<span class="service-block__descr">Solicitors</span></a>
-								<a href="#" class="service-block__link">
-									<span class="service-block__img">
-										<img src="img/service/service-14.png" alt="14">
-									</span>
-									<span class="service-block__descr">Surgery Design</span></a>
-									<a href="#" class="service-block__link">
-										<span class="service-block__img">
-											<img src="img/service/service-15.png" alt="15">
-										</span>
-										<span class="service-block__descr">Training & Courses</span></a>
-										<div class="service-block__wrap">
-											<a href="#" class="service-block__link">
-												<span class="service-block__img">
-													<img src="img/service/service-16.png" alt="16">
-												</span>
-												<span class="service-block__descr">Web Designers</span>
-											</a>
-											<a href="#" class="service-block__link">
-												<span class="service-block__img">
-													<img src="img/service/service-17.png" alt="17">
-												</span>
-												<span class="service-block__descr">Cleaning Agencies</span>
-											</a>
-											<a href="#" class="service-block__link">
-												<span class="service-block__img">
-													<img src="img/service/service-18.png" alt="18">
-												</span>
-												<span class="service-block__descr">Dental  Chair <br>Recovery</span>
-											</a>
-											<div class="service-block__wrap">
-												<a href="#" class="service-block__link">
-													<span class="service-block__img">
-														<img src="img/service/service-19.png" alt="19">
-													</span>
-													<span class="service-block__descr">Equipment <br>Engineering</span>
-												</a>
-												<a href="#" class="service-block__link">
-													<span class="service-block__img">
-														<img src="img/service/service-20.png" alt="20">
-													</span>
-													<span class="service-block__descr">Selling Gold</span>
-												</a>
-												<a href="#" class="service-block__link">
-													<span class="service-block__img">
-														<img src="img/service/service-21.png" alt="21">
-													</span>
-													<span class="service-block__descr">Uniform & <br>Workwear</span>
-												</a>
-											</div>
-											<!-- /.service-block__wrap -->
-										</div>
-										<!-- /.service-block__wrap -->
-									</div>
-									<!-- /.service-block__wrap -->
-								</div>
-								<!-- /.service-block -->
-							</section>
-							<!-- /.service -->
+						<div id="wrap" class="service-block">
 						</div>
-						<!-- /.colomn-center -->
-						<div class="content-colomn__right">
-							<section class="people">
-								<div class="people-header">
-									<h3 class="people-header__title">People you may know</h3>
-									<!-- /.people-header__title -->
-									<a href="#"><span class="people-header__link">See All</span></a>
-								</div>
-								<!-- /.people-header -->
-								<ul class="people-list">
-									<h4 class="people-name">Dennis Adams</h4>
-									<li class="people-list__item">
-										<div class="people-list__img"><img src="img/people/people-1.jpg" alt="people-1"></div>
-										<!-- /.people-list__img -->
-										<div class="people-list__text">
-											<!-- /.people-list__title -->
-											<p class="people-list__descr">Dentist (Practice Owner)</p>
-											<!-- /.people-list__descr -->
-											<p class="people-list__city">London, England</p>
-											<!-- /.people-list__descr -->
-											<a href="#"><span class="people-list__link">Add Friend</span></a>
-										</div>
-										<!-- /.people-list__text -->
-									</li>
-									<!-- /.people-list__item -->
-									<h4 class="people-name">Mary Carpenter</h4>
-									<li class="people-list__item">
-										<div class="people-list__img"><img src="img/people/people-2.jpg" alt="people-2"></div>
-										<!-- /.people-list__img -->
-										<div class="people-list__text">
-											<!-- /.people-list__title -->
-											<p class="people-list__descr">Dentist (Practice Owner)</p>
-											<!-- /.people-list__descr -->
-											<p class="people-list__city">Belgrade, Serbia</p>
-											<!-- /.people-list__descr -->
-											<a href="#"><span class="people-list__link">Add Friend</span></a>
-										</div>
-										<!-- /.people-list__text -->
-									</li>
-									<!-- /.people-list__item -->
-									<h4 class="people-name">Danielle Salazar</h4>
-									<li class="people-list__item">
-										<div class="people-list__img"><img src="img/people/people-3.jpg" alt="people-3"></div>
-										<!-- /.people-list__img -->
-										<div class="people-list__text">
-											<!-- /.people-list__title -->
-											<p class="people-list__descr">Dentist (Practice Owner)</p>
-											<!-- /.people-list__descr -->
-											<p class="people-list__city">Paris, France</p>
-											<!-- /.people-list__descr -->
-											<a href="#"><span class="people-list__link">Add Friend</span></a>
-										</div>
-										<!-- /.people-list__text -->
-									</li>
-									<!-- /.people-list__item -->
-								</ul>
-								<!-- /.people-list -->
-							</section>
-							<!-- /.people -->
-							<section class="products">
-								<div class="products-header">
-									<h3 class="products-header__title">Featured Products</h3>
-									<!-- /.products-header__title -->
-									<a href="#"><span class="products-header__link">See All</span></a>
-								</div>
-								<!-- /.products-header -->
-								<ul class="products-list">
-									<h4 class="products-name">Product Name</h4>
-									<li class="products-list__item">
-										<div class="products-list__img"><img src="img/products/products-1.jpg" alt="products-1"></div>
-										<!-- /.products-list__img -->
-										<div class="products-list__text">
-											<!-- /.products-list__title -->
-											<p class="products-list__descr">Product Short <br>
-												Description. <br>
-												The quick brown <br>
-												fox jumps over the <br>
-											lazy dog.</p>
-											<!-- /.products-list__descr -->
-										</div>
-										<!-- /.products-list__text -->
-									</li>
-									<!-- /.products-list__item -->
-									<h4 class="products-name">Product Name</h4>
-									<li class="products-list__item">
-										<div class="products-list__img"><img src="img/products/products-2.jpg" alt="products-2"></div>
-										<!-- /.products-list__img -->
-										<div class="products-list__text">
-											<!-- /.products-list__title -->
-											<p class="products-list__descr">Product Short <br>
-												Description. <br>
-												The quick brown <br>
-												fox jumps over the <br>
-											lazy dog.</p>
-											<!-- /.products-list__descr -->
-										</div>
-										<!-- /.products-list__text -->
-									</li>
-									<!-- /.products-list__item -->
-								</ul>
-								<!-- /.products-list -->
-							</section>
-							<!-- /.products -->
-							<section class="benefit benefit_right">
-								<a href="#" class="benefit-link">
-									<h3 class="benefit-link__title benefit-link__title_right">Advertisement</h3>
-									<span class="benefit-link__img">
-										<img src="img/benefit/benefit-right.jpg" alt="benefit-right">
-									</span>
-									<span class="benefit-link__descr">
-										Ads By Denteez.com
-									</span>
-								</a>
-							</section>
-						</div>
-						<!-- /.colomn-right -->
-					</div>
-					<!-- /.content-wrapper -->
+						<!-- /.service-block -->
+					</section>
+					<!-- /.service -->
 				</div>
-				<!-- /.container -->
-			</section>
-			<!-- /.content -->
+				<!-- /.colomn-center -->
+				<div class="content-colomn__right">
+					<section class="people">
+						<div class="people-header">
+							<h3 class="people-header__title">People you may know</h3>
+							<!-- /.people-header__title -->
+							<a href="#"><span class="people-header__link">See All</span></a>
+						</div>
+						<!-- /.people-header -->
+						<ul class="people-list">
+							<h4 class="people-name">Dennis Adams</h4>
+							<li class="people-list__item">
+								<div class="people-list__img"><img src="img/people/people-1.jpg" alt="people-1"></div>
+								<!-- /.people-list__img -->
+								<div class="people-list__text">
+									<!-- /.people-list__title -->
+									<p class="people-list__descr">Dentist (Practice Owner)</p>
+									<!-- /.people-list__descr -->
+									<p class="people-list__city">London, England</p>
+									<!-- /.people-list__descr -->
+									<a href="#"><span class="people-list__link">Add Friend</span></a>
+								</div>
+								<!-- /.people-list__text -->
+							</li>
+							<!-- /.people-list__item -->
+							<h4 class="people-name">Mary Carpenter</h4>
+							<li class="people-list__item">
+								<div class="people-list__img"><img src="img/people/people-2.jpg" alt="people-2"></div>
+								<!-- /.people-list__img -->
+								<div class="people-list__text">
+									<!-- /.people-list__title -->
+									<p class="people-list__descr">Dentist (Practice Owner)</p>
+									<!-- /.people-list__descr -->
+									<p class="people-list__city">Belgrade, Serbia</p>
+									<!-- /.people-list__descr -->
+									<a href="#"><span class="people-list__link">Add Friend</span></a>
+								</div>
+								<!-- /.people-list__text -->
+							</li>
+							<!-- /.people-list__item -->
+							<h4 class="people-name">Danielle Salazar</h4>
+							<li class="people-list__item">
+								<div class="people-list__img"><img src="img/people/people-3.jpg" alt="people-3"></div>
+								<!-- /.people-list__img -->
+								<div class="people-list__text">
+									<!-- /.people-list__title -->
+									<p class="people-list__descr">Dentist (Practice Owner)</p>
+									<!-- /.people-list__descr -->
+									<p class="people-list__city">Paris, France</p>
+									<!-- /.people-list__descr -->
+									<a href="#"><span class="people-list__link">Add Friend</span></a>
+								</div>
+								<!-- /.people-list__text -->
+							</li>
+							<!-- /.people-list__item -->
+						</ul>
+						<!-- /.people-list -->
+					</section>
+					<!-- /.people -->
+					<section class="products">
+						<div class="products-header">
+							<h3 class="products-header__title">Featured Products</h3>
+							<!-- /.products-header__title -->
+							<a href="#"><span class="products-header__link">See All</span></a>
+						</div>
+						<!-- /.products-header -->
+						<ul class="products-list">
+							<h4 class="products-name">Product Name</h4>
+							<li class="products-list__item">
+								<div class="products-list__img"><img src="img/products/products-1.jpg" alt="products-1"></div>
+								<!-- /.products-list__img -->
+								<div class="products-list__text">
+									<!-- /.products-list__title -->
+									<p class="products-list__descr">Product Short <br>
+										Description. <br>
+										The quick brown <br>
+										fox jumps over the <br>
+									lazy dog.</p>
+									<!-- /.products-list__descr -->
+								</div>
+								<!-- /.products-list__text -->
+							</li>
+							<!-- /.products-list__item -->
+							<h4 class="products-name">Product Name</h4>
+							<li class="products-list__item">
+								<div class="products-list__img"><img src="img/products/products-2.jpg" alt="products-2"></div>
+								<!-- /.products-list__img -->
+								<div class="products-list__text">
+									<!-- /.products-list__title -->
+									<p class="products-list__descr">Product Short <br>
+										Description. <br>
+										The quick brown <br>
+										fox jumps over the <br>
+									lazy dog.</p>
+									<!-- /.products-list__descr -->
+								</div>
+								<!-- /.products-list__text -->
+							</li>
+							<!-- /.products-list__item -->
+						</ul>
+						<!-- /.products-list -->
+					</section>
+					<!-- /.products -->
+					<section class="benefit benefit_right">
+						<a href="#" class="benefit-link">
+							<h3 class="benefit-link__title benefit-link__title_right">Advertisement</h3>
+							<span class="benefit-link__img">
+								<img src="img/benefit/benefit-right.jpg" alt="benefit-right">
+							</span>
+							<span class="benefit-link__descr">
+								Ads By Denteez.com
+							</span>
+						</a>
+					</section>
+				</div>
+				<!-- /.colomn-right -->
+			</div>
+			<!-- /.content-wrapper -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.content -->
 
-			<script src="js/api.js"></script>
+	<script src="js/api.js"></script>
 
-		</body>
-		</html>
+</body>
+</html>
