@@ -11,9 +11,11 @@
     "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
-    "gulp-clean-css": "^3.9.3",
+    "gulp-clean-css": "^3.9.4",
     "gulp-concat-css": "^3.1.0",
-    "gulp-sass": "^4.0.1"
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^3.0.0"
   },
   "dependencies": {
     "npm": "^6.1.0"

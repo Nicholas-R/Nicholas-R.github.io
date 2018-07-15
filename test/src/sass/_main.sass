@@ -1,0 +1,90 @@
+.form
+	margin-bottom: 450px
+	&-inf
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-top: -20px
+		margin-bottom: -20px
+	&-input
+		display: block
+		width: 47%
+		height: 63px
+		border: 1px solid #e5e5e5
+		border-radius: 5px
+		background-color: #ffffff
+		margin-bottom: 25px
+		font-size: 24px
+		font-weight: 400
+		padding-left: 20px
+		&::placeholder
+			color: #c8c8c8
+			text-align: center
+		@media screen and (max-width: 1000px)
+			width: 70%
+	&-select
+		width: 30%
+		height: 63px
+		border: 1px solid #e5e5e5
+		border-radius: 5px
+		background-color: #ffffff
+		margin-bottom: 25px
+		font-size: 24px
+		font-weight: 400
+		padding-left: 20px
+		@media screen and (max-width: 1000px)
+			width: 45%
+
+	&-checkbox
+		display: block
+		font-size: 16px
+		font-weight: 300
+		color: #000000
+		margin-bottom: 25px
+		padding-left: 90px
+		input
+			&:hover
+			cursor: pointer
+		&:hover
+			cursor: pointer
+		@media screen and (max-width: 1000px)
+			padding-left: 50px
+		@media screen and (max-width: 768px)
+			padding-left: 0px
+			text-align: center
+	&-self
+		display: flex
+		justify-content: center
+		margin-bottom: 65px
+		&__textarea
+			width: 523px
+			height: 183px
+			border: 1px solid #e5e5e5
+			color: black
+			font-size: 20px
+			font-weight: 400
+			padding: 25px 20px
+			&::placeholder
+				color: #c8c8c8
+.button
+	display: block
+	width: 118px
+	height: 53px
+	background-color: #435993
+	border: none
+	border-radius: 10px
+	color: #ffffff
+	font-size: 16px
+	font-weight: 300
+	margin: 0 auto
+	&:hover
+		background-color: lighten(#435993, 5%)
+		cursor: pointer
+
+
+#choice option 
+	color: black
+
+.empty 
+	color: #c8c8c8
+	text-align: center

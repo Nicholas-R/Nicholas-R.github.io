@@ -3,6 +3,9 @@ var browserSync  = require('browser-sync');
 var sass         = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var concatCss    = require('gulp-concat-css');
+let cleanCSS     = require('gulp-clean-css');
+var uglify 		 = require('gulp-uglify');
+var pump 		 = require('pump');
 
 // Static Server + watching sass/html files
 gulp.task('serve', ['sass'], function() {
@@ -28,4 +31,23 @@ gulp.task('sass', function() {
 		.pipe(browserSync.stream());
 });
 
+gulp.task('minify-css', () => {
+  return gulp.src('src/css/*.css')
+  	.pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(cleanCSS({debug: true}, (details) => {
+      console.log(`${details.name}: ${details.stats.originalSize}`);
+      console.log(`${details.name}: ${details.stats.minifiedSize}`);
+    }))
+  .pipe(gulp.dest('dist/css'));
+});
+
+gulp.task('compress', function (cb) {
+  pump([
+        gulp.src('src/js/*.js'),
+        uglify(),
+        gulp.dest('dist/js')
+    ],
+    cb
+  );
+});
 gulp.task('default', ['serve']);
