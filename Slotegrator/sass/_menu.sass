@@ -1,0 +1,30 @@
+.menu
+	background-color: #767676
+	padding: 16px 0 24px 28px
+	&-list 
+		display: flex
+		justify-content: center
+		&__item
+			position: relative
+			&::before
+				content: ""
+				display: block
+				position: absolute
+				width: 2px
+				height: 30px
+				top: 5px
+				right: 0
+				background-color: #fff
+			&:last-child::before
+				content: ""
+				display: none
+		&__link
+			position: relative
+			color: #ffffff
+			font-size: 29px
+			font-weight: 400
+			letter-spacing: 0.75px
+			padding: 0 20px
+			&:hover
+				cursor: pointer
+				text-decoration: underline

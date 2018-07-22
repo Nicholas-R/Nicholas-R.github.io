@@ -1,0 +1,28 @@
+.slider
+	position: relative
+	background-color: #f8f8f8
+	width: 100%
+	&-block
+		&__img
+			height: 400px
+			img
+				height: 100%
+.slick
+	&-arrow
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		background: #d1d1d1
+		border: none
+		height: 61px
+		width: 34px
+		transition: 0.3s 0.1s ease
+		i
+			font-size: 24px
+		&:hover
+			background: grey
+			cursor: pointer
+	&-prev
+		left: 13%
+	&-next
+		right: 13%
