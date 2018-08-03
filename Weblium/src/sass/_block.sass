@@ -1,0 +1,176 @@
+.block
+	padding-top: 63px 
+	padding-bottom: 109px
+	border-bottom: 1px solid $dark-sky-blue
+	text-align: left
+	background: rgb(0,183,255)
+	background: -moz-linear-gradient(45deg, rgba(0,183,255,1) 0%, rgba(255,255,199,1) 100%)
+	background: -webkit-linear-gradient(45deg, rgba(0,183,255,1) 0%,rgba(255,255,199,1) 100%)
+	background: linear-gradient(45deg, rgba(0,183,255,1) 0%,rgba(255,255,199,1) 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ff', endColorstr='#ffffc7',GradientType=1 )
+	@media screen and (max-width: 320px)
+		padding-bottom: 20px
+	&-header
+		margin-bottom: 50px
+		&__title
+			font-size: 32px
+			color: $black
+			margin-bottom: 15px
+		&__subtitle
+			width: 85%
+			font-size: 20px
+			line-height: 1.6
+			color: $brownish-grey
+			@media screen and (max-width: 768px)
+				width: 100%
+				text-align: justify
+			@media screen and (max-width: 320px)
+				display: none
+
+	&-heading
+		font-size: 24px
+		color: $black
+		margin-bottom: 20px
+		@media screen and (max-width: 768px)
+			font-size: 20px
+			line-height: 1.6
+			color: $grey
+		@media screen and (max-width: 320px)
+			display: none
+	&-day
+		padding-top: 9px
+		padding-bottom: 30px
+		border-top: 1px solid #979797
+		display: flex
+		justify-content: space-between
+		@media screen and (max-width: 320px)
+			flex-wrap: wrap
+			justify-content: flex-end
+		&__subtitle
+			position: relative
+			display: block
+			width: 26%
+			font-size: 20px
+			font-weight: 500
+			line-height: 1.6
+			color: $grey
+			z-index: 1
+			@media screen and (max-width: 768px)
+				font-size: 18px
+				line-height: 1.33
+			@media screen and (max-width: 320px)
+				width: 100%
+				margin-bottom: 15px
+				&:hover 
+					cursor: pointer
+		&__text
+			width: 74%
+			display: flex
+			justify-content: space-between
+			flex-direction: column	
+			font-size: 16px
+			line-height: 1.5
+			text-align: left
+			color: $grey
+			@media screen and (max-width: 768px)
+				font-size: 14px
+				line-height: 1.71
+			@media screen and (max-width: 320px)
+				width: 55%
+				justify-content: center
+				flex-direction: column
+				display: none
+		&__descr
+			width: 100%
+			display: flex
+			justify-content: space-between
+			margin-bottom: 10px
+			@media screen and (max-width: 320px)
+				justify-content: center
+				flex-direction: column
+				margin-bottom: 25px
+		&__time
+			width: 34.5%
+			@media screen and (max-width: 320px)
+				width: 100%
+		&__time_five
+			width: 30%
+			@media screen and (max-width: 320px)
+				width: 100%
+		&__class
+			width: 34.5%
+			@media screen and (max-width: 320px)
+				width: 100%
+		&__class_five
+			width: 21%
+			@media screen and (max-width: 320px)
+				width: 100%
+		&__coach
+			width: 31%
+			@media screen and (max-width: 320px)
+				width: 100%
+		&__coach_five 
+			width: 30%
+			@media screen and (max-width: 320px)
+				width: 100%
+		&__level
+			width: 18%
+			@media screen and (max-width: 320px)
+				width: 100%
+	&-button
+		display: flex
+		justify-content: center
+		margin-top: 34px
+		@media screen and (max-width: 320px)
+			flex-direction: column
+		a
+			display: flex
+			margin-right: 15px
+		&__link
+			color: $black
+			font-size: 16px
+			padding: 13px 20px 15px 20px
+			text-decoration: underline
+			transform: scale(1,1)
+			transition-timing-function: ease-out
+			transition-duration: 550ms
+			@media screen and (max-width: 320px)
+				margin-bottom: 25px
+			&:hover
+				cursor: pointer
+				transform: scale(1.2,1.2)
+				transition-timing-function: ease-out
+				transition-duration: 550ms
+			i 
+				margin-left: 4px
+.container-block
+	max-width: 900px
+	padding: 0 15px
+	margin: 0 auto
+.class-three
+	width: 66%
+	@media screen and (max-width: 320px)
+		width: 55%
+.class-edge
+	width: 47%
+.subtitle_five
+	width: 17.5%	
+	@media screen and (max-width: 320px)
+		width: 100%
+
+.class-five
+	width: 82.5%
+	@media screen and (max-width: 320px)
+		width: 55%
+.panel-active + .block-day__text
+	display: block
+.fa-chevron-up, .fa-chevron-down
+	position: absolute
+	width: 95%
+	height: 100%
+	text-align: right
+	left: 0
+	top: 0
+	display: none
+	@media screen and (max-width: 320px)
+		display: block
