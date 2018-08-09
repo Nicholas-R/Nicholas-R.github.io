@@ -1,0 +1,25 @@
+.button 
+	padding: 13px 20px 15px 20px
+	border: 1px solid $brownish-grey
+	border-radius: 5px
+	background-color: $brownish-grey
+	color: $white
+	font-size: 14px
+	text-align: center
+	margin: 0 15px
+	transform: scale(1,1)
+	transition-timing-function: ease-out
+	transition-duration: 550ms
+	@media screen and (max-width: 320px)
+		margin-bottom: 25px
+	&:hover
+		cursor: pointer
+		transform: scale(1.2,1.2)
+		transition-timing-function: ease-out
+		transition-duration: 550ms
+
+	&-o 
+		border: 1px solid $line-color
+		background-color: transparent
+		color: $black
+		
