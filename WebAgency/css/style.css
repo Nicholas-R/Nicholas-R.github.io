@@ -498,6 +498,8 @@ li {
   position: absolute;
   top: -45px;
   left: 0;
+  width: 100%;
+  overflow: hidden;
 }
 
 .development-title {
