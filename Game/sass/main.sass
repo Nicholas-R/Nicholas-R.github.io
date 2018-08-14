@@ -1,0 +1,321 @@
+.main 
+	display: flex
+	padding: 40px 30px
+	background: url(../img/main-bg.png) no-repeat left top
+	background-size: 100%
+	background-color: #323145
+	position: relative
+	z-index: 1
+	&::before
+		content: ""
+		display: block
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background: rgba(50, 49, 69, 0.8)
+		z-index: 0
+	@media screen and (max-width: 768px)
+		flex-wrap: wrap
+
+	&-center
+		width: 60%
+		z-index: 1
+		@media screen and (max-width: 768px)
+			width: 100%
+		&__back-arrow
+			width: 100%
+			text-align: left
+			margin-bottom: 35px
+			a
+				color: #ffffff
+				font-size: 18px
+				font-weight: 400
+				letter-spacing: 0.72px
+			i
+				margin-right: 20px
+				color: #9d9acc
+				font-size: 12px
+				opacity: 0.4
+			@media screen and (max-width: 568px)
+				a
+					font-size: 14px
+		&__nav
+			width: 100%
+			padding: 30px 25px
+			display: flex
+			justify-content: space-between
+			box-shadow: 0 22px 40px rgba(36, 35, 51, 0.45)
+			border-radius: 15px
+			background-color: #242333
+			background-color: #242333
+			opacity: 0.8
+			margin-bottom: 20px
+			a
+				color: #9d9acc
+				font-size: 14px
+				font-weight: 400
+				letter-spacing: 0.56px
+			@media screen and (max-width: 568px)
+				a
+					font-size: 12px
+			&_prev
+				i 
+					margin-right: 20px
+					font-size: 12px
+					@media screen and (max-width: 568px)
+						margin-right: 5px
+			&_next
+				i
+					margin-left: 20px
+					font-size: 12px
+					@media screen and (max-width: 568px)
+						margin-left: 5px
+		&__block
+			padding-top: 25px
+			width: 100%
+			display: block
+			box-shadow: 0 22px 40px rgba(36, 35, 51, 0.45)
+			border-radius: 15px
+			background-color: #242333
+	&-news
+		width: 100%
+		padding: 0 23px
+		padding-bottom: 30px
+		&__img
+			display: block
+			width: 100%
+			height: 100%
+			margin-bottom: 25px
+			img
+			max-width: 100%
+			height: auto
+		&__title
+			color: #ffffff
+			font-size: 22px
+			font-weight: 500
+			letter-spacing: 0.88px
+			margin-bottom: 20px
+		&__date
+			opacity: 0.5
+			color: #9d9acc
+			font-size: 16px
+			font-weight: 400
+			letter-spacing: 0.64px
+			margin-bottom: 30px
+		&__descr
+			color: #9d9acc
+			font-size: 16px
+			font-weight: 400
+			line-height: 25px
+			letter-spacing: 0.64px
+			margin-bottom: 30px
+		&__footer
+			width: 100%
+			padding: 28px 23px
+			display: flex
+			justify-content: space-between
+			margin-bottom: 20px
+			border-top: 2px solid rgba(157, 154, 204, 0.1)
+			@media screen and (max-width: 568px)
+				flex-direction: column
+				align-items: center
+		&__calc
+			display: flex
+			margin-left: 13px
+			@media screen and (max-width: 568px)
+				margin-bottom: 30px
+		&__likes
+			color: #ffffff
+			font-size: 16px
+			font-weight: 400
+			line-height: 25px
+			letter-spacing: 0.64px
+			margin-right: 45px
+			i
+				color: #ed718f
+				font-size: 19px
+				margin-right: 14px
+				&:hover
+					cursor: pointer
+		&__eye
+			color: #9d9acc
+			font-size: 16px
+			font-weight: 400
+			line-height: 25px
+			letter-spacing: 0.64px
+			i
+				color: #9d9acc
+				opacity: 0.2
+				font-size: 18px
+				margin-right: 14px
+		&__link
+			a
+				font-size: 23px
+				color: #9d9acc
+				opacity: 0.3
+				margin-left: 20px
+	&-comment
+		width: 100%
+		box-shadow: 0 22px 40px rgba(36, 35, 51, 0.45)
+		border-radius: 15px
+		background-color: #242333
+	&-right
+		width: 37%
+		margin-left: 2%
+		z-index: 1
+		@media screen and (max-width: 768px)
+			width: 100%
+			margin-top: 40px
+		&__title
+			color: #ffffff
+			font-size: 18px
+			font-weight: 400
+			letter-spacing: 0.72px
+			margin-bottom: 30px
+			@media screen and (max-width: 768px)
+				text-align: center
+
+.comment-header
+	display: flex
+	justify-content: space-between
+	height: 77px
+	border-bottom: 2px solid rgba(157, 154, 204, 0.1)
+	padding: 30px 30px
+	&__calc
+		display: flex
+		@media screen and (max-width: 320px)
+			display: none
+		i
+			color: #9d9acc
+			font-size: 21px
+			padding-right: 20px
+	&__text
+		color: #9d9acc
+		font-size: 18px
+		font-weight: 400
+		letter-spacing: 0.72px
+		@media screen and (max-width: 568px)
+			display: none
+	&__num
+		color: #ffffff
+		font-weight: 300
+		letter-spacing: 0.72px
+	&__link
+		a
+			position: relative
+			padding: 30px 10px
+			color: #9d9acc
+			font-family: "Myriad Pro"
+			font-size: 16px
+			font-weight: 400
+			letter-spacing: 0.64px
+			margin-left: 25px
+			&::after
+				content: ""
+				display: none
+				position: absolute
+				height: 2px
+				width: 100%
+				bottom: 0
+				left: 50%
+				transform: translateX(-50%)
+				background-image: linear-gradient(to right, #d94fc7 0%, #ff905a 100%)
+				z-index: 2
+			&:hover 
+				color: #ffffff				
+				&::after
+					display: block
+
+.comment-body
+	padding: 30px 25px
+	&__enter
+		width: 100%
+	&__input
+		width: 100%
+		height: 62px
+		border: none
+		border-radius: 5px
+		background-color: rgba(157, 154, 204, 0.05);
+		padding: 24px 27px
+		color: #ffffff
+		font-size: 14px
+		font-weight: 400
+		letter-spacing: 0.56px
+		margin-bottom: 16px
+		&::placeholder
+			opacity: 0.4
+			color: #9d9acc
+			font-size: 16px
+			font-weight: 400
+			letter-spacing: 0.64px
+	&__out
+		display: flex
+		padding-top: 18px
+		padding-bottom: 32px
+		border-bottom: 2px solid rgba(157, 154, 204, 0.1)
+	&__img
+		display: block
+		min-width: 60px
+		min-height: 60px
+		border-radius: 50%
+		margin-right: 17px
+		img
+			max-width: 100%
+			height: auto
+			overlay: none
+	&__text
+		display: flex
+		flex-wrap: wrap
+		align-items: flex-end
+	&__title
+		color: #9d9acc
+		font-size: 18px
+		font-weight: 400
+		letter-spacing: 0.72px
+		margin-right: 13px
+	&__date
+		opacity: 0.5
+		color: #9d9acc
+		font-size: 16px
+		font-weight: 400
+		letter-spacing: 0.64px
+	&__descr
+		width: 100%
+		color: #ffffff
+		font-size: 14px
+		font-weight: 400
+		line-height: 24px
+		letter-spacing: 0.56px
+		margin-top: 23px
+
+.right-blocks
+	background: url(../img/blocks-img.jpg) no-repeat center
+	background-size: cover
+	width: 100%
+	max-height: 260px
+	max-width: 440px
+	padding-top: 150px
+	border-radius: 10px
+	margin: 0 auto
+	margin-bottom: 40px
+	@media screen and (max-width: 900px)
+		margin-bottom: 100px
+	&__text
+		padding: 24px 69px 29px 26px
+		border-radius: 0 0 10px 10px
+		background-color: rgba(36, 35, 51, 0.9)
+		@media screen and (max-width: 768px)
+			padding: 29px 26px
+	&__title
+		color: #ffffff
+		font-size: 18px
+		font-weight: 400
+		letter-spacing: 0.72px
+		margin-bottom: 15px
+	&__descr
+		color: #9d9acc
+		font-size: 14px
+		font-weight: 400
+		letter-spacing: 0.56px
